@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="CHOKE">
+        <title>列表测试</title>
+    </head>
+    <body>
+        <h4>创建一个有序列表</h4>
+        <ol>
+            <li>内容1</li>
+            <li>内容3</li>
+            <li>内容3</li>
+        </ol>
+    <h4>创建一个初始排序为100的有序列表</h4>
+        <ol start="100">
+            <li>内容1</li>
+            <li>内容3</li>
+            <li>内容3</li>
+        </ol>
+    <h4>创建一个以大写英文排序的有序列表</h4>
+    <ol type="A">
+        <li>内容1</li>
+        <li>内容3</li>
+        <li>内容3</li>
+    </ol>
+<!--type决定了排序基准，默认为数字-->
+<!--type的值为A/a时，以大/小写英文字母为基准      type值为I/i时，以大/小写罗马数字为基准-->        
+    <h4>创建一个无序列表(默认为圆形)</h4>
+    <ul>
+        <li>内容1</li>
+        <li>内容3</li>
+        <li>内容3</li>      
+    </ul>
+    <h4>创建一个无序方形列表</h4>
+    <ul style="list-style-type: square;">
+        <li>内容1</li>
+        <li>内容3</li>
+        <li>内容3</li>      
+    </ul>
+<!--列表前的形状通过style元素来指定-->
+    <h4>创建一个无序方形列表</h4>
+    <dl>
+        <dt>内容1</dt>
+        <dd>解释1</dd>
+        <dt>内容2</dt>
+        <dd>解释2</dd>
+        <dt>内容3</dt>
+        <dd>解释3</dd>
+    </dl>
+    </body>
+</html>

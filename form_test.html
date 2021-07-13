@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="CHOKE">
+        <title>表单测试</title>
+    </head>
+    <body>
+        <h4>创建一个可以输入姓名的文本域</h4>
+        <form>
+            姓:<input type="text" name="last name"><br>
+            名:<input type="text" name="first name">
+        </form>
+<!--type规定了输入类型 此处问文本-->
+        <h4>创建一个可以输入密码的文本域</h4>
+        <form>
+            密码:<input type="password" name="pwd">
+        </form>
+<!--此处的输入内容不会明文显示-->
+        <h4>选项按钮</h4>
+        <form action="">
+            <h5>单选</h5>
+            <input type="radio" name="char" value="a">A选项<br>
+            <input type="radio" name="char" value="b">B选项<br>
+            <input type="radio" name="char" value="c">C选项
+            <h5>多选</h5>
+            <input type="checkbox" name="string" value="aa">AA选项<br>
+            <input type="checkbox" name="string" value="bb">BB选项<br>
+            <input type="checkbox" name="string" value="cc">CC选项<br>
+<!--要确定多个选项在一个系列，name属性的值必须一致-->
+<!--若单选项name不一致,达不到单选效果-->
+        </form>
+        <h4>创建一个带有按钮的表单</h4>
+        <form>
+            <input type="button" action=" " value="按钮">
+        </form>
+        <form name="in" action="http://www.baidu.com" method="GET">
+            输入内容:<input type="text" name="t">
+            <input type="submit"  value="跳转">
+        </form>
+        <h4>创建一个下拉菜单</h4>
+        <form action="">
+            <select name="chars">
+                <option value="a" >A</option>
+                <option value="b" selected>B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select>
+        </form>
+        <h4>创建一个文本框</h4>
+        <textarea rows="10" cols="30">这是一个文本框</textarea>
+        <h3>创建一个带边框的表单</h3>
+        <form action="">
+            <fieldset>
+                <legend>这是表单标题</legend>
+                ID:<input type="text" name="id" size="10"><br>
+                NAME:<input type="text" name="name" size="10">
+            </fieldset>
+        </form>
+    </body>
+</html>
